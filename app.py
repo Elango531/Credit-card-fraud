@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Calories Burnt Predictor")
+st.title("Credit Card Fraud")
 
 st.write("My Streamlit app is working!")
 
