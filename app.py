@@ -28,7 +28,7 @@ if st.button("Predict"):
     "Amount_scaled"
     ]
     input_data = { **values, 'Amount scaled:' : amount_scaled }
-    input_df = pd.DataFrame([[values[f"V{i}"] for i in range(1, 29)] + [amount_scaled]], columns = feature_names
+    input_df = pd.DataFrame([[values[f"V{i}"] for i in range(1, 29)] + [amount_scaled]], columns = feature_names)
 
     prediction = model.predict(input_df)[0]
     if prediction == 1:
