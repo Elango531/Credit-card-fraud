@@ -14,7 +14,7 @@ st.subheader("Transaction Features")
 values = {}
 
 for i in range(1, 29):
-    values[f"V{i}"] = st.number_input(f"V{i}", value = 0.0)
+    values[f"V{i}"] = 0.0)
 
 if st.button("Predict"):
     amount_scaled = scaler.transform([[amount]])[0][0]
