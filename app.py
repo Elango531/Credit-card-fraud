@@ -7,8 +7,6 @@ scaler = joblib.load("amount_scaler.pkl")
 
 st.title("Credit Card Fraud")
 
-st.write("Enter the transaction details below.")
-
 amount = st.number_input("Transaction Amount", min_value = 0.0, value = 100.00)
 
 st.subheader("Transaction Features")
